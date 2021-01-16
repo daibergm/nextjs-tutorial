@@ -20,12 +20,12 @@ function Header(): JSX.Element {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="services">
+              <Link href="/services">
                 <a className="nav-link">Services</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="about">
+              <Link href="/about">
                 <a className="nav-link">About</a>
               </Link>
             </li>
