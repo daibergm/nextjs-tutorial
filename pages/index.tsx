@@ -23,7 +23,7 @@ const Home: NextPage<Props> = ({ users }) => {
         <Users users={users} />
       </>
     </BaseLayout>
-  )
+  );
 };
 
 Home.getInitialProps = async () => {

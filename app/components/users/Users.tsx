@@ -7,9 +7,9 @@ type Props = {
   users: User[]
 }
 
-const navigate = (id: number) => Router.push('/users/[id]', `/users/${id}`);
+const navigate = (id: number): Promise<boolean> => Router.push('/users/[id]', `/users/${id}`);
 
-function Users({ users }: Props) {
+function Users({ users }: Props): JSX.Element {
   return (
     <ul className="list-group">
       {users.map(user => {
