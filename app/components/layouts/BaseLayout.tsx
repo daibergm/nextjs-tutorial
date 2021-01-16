@@ -13,7 +13,7 @@ function BaseLayout({ children } : Props):JSX.Element {
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"/>
       </Head>
       <Header />
-      <div className="container-fluid">{children}</div>
+      <div className="container-fluid mb-4 mt-2">{children}</div>
     </div>
   );
 }
