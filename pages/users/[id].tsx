@@ -18,7 +18,7 @@ const UserPage: NextPage<Props> = ({ user }) => {
   const name = `${user.first_name} ${user.last_name}`;
 
   return (
-    <BaseLayout>
+    <BaseLayout pageName={name}>
       <div className="row">
         <div className="col-md-6 offset-md-3">
           <div className="card-header text-center">

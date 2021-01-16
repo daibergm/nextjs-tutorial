@@ -1,9 +1,8 @@
-import Head from 'next/head';
 import { NextPage } from 'next';
 import Fetch from 'isomorphic-fetch';
 
 // @constants
-import { appName, apiUrl } from '../app/constants';
+import { apiUrl } from '../app/constants';
 
 // @Components
 import BaseLayout from '../app/components/layouts/BaseLayout';
@@ -18,17 +17,12 @@ type Props = {
 
 const Home: NextPage<Props> = ({ users }) => {
   return (
-    <>
-      <Head>
-        <title>{appName} - Home</title>
-      </Head>
-      <BaseLayout>
-        <>
-          <h1>Home</h1>
-          <Users users={users} />
-        </>
-      </BaseLayout>
-    </>
+    <BaseLayout pageName="Home">
+      <>
+        <h1>Home</h1>
+        <Users users={users} />
+      </>
+    </BaseLayout>
   )
 };
 

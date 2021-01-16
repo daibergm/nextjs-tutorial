@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+// @Constatns
 import { appName } from '../../constants';
 
 function Header(): JSX.Element {
